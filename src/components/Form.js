@@ -1,5 +1,3 @@
-// @flow
-
 import React, { Component } from 'react';
 import {
 	Alert,
@@ -70,7 +68,6 @@ const styles = StyleSheet.create({
 		flexDirection: 'row',
 		justifyContent: 'space-around',
 		backgroundColor: '#FFF',
-		opacity: 0.5,
 		margin: 0,
 		paddingTop: 80,
 		width: window.width,

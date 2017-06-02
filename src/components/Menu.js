@@ -26,12 +26,6 @@ export default class Menu extends Component {
             source={require('../assets/img/tabuada.png')} />
         </View>
 
-        <Text
-          onPress={() => this.props.onItemSelected('About')}
-          style={styles.item}>
-          Sobre
-        </Text>
-
         {
           tabs.map(num => {
             return (
@@ -43,6 +37,13 @@ export default class Menu extends Component {
             )
           })
         }
+
+        <Text
+          onPress={() => this.props.onItemSelected('Clima')}
+          style={styles.item}>
+          Clima em Blumenau
+        </Text>
+
       </ScrollView>
     );
   }

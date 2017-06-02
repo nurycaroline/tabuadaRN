@@ -1,10 +1,9 @@
-// @flow
-
 import React, { Component } from 'react';
 import SideMenu from  'react-native-side-menu'
 import Menu from './Menu';
 import Button from './Button';
 import Tabuada from './Tabuada';
+import Clima from './Clima';
 
 import {
   Text,
@@ -18,7 +17,7 @@ import {
 export default class App extends Component {
   state = {
     isOpen: false,
-    selectedItem: '1',
+    selectedItem: 'Clima',
   };
 
   onMenuItemSelected = (item) => {
@@ -38,9 +37,9 @@ export default class App extends Component {
         onChange={(isOpen) => this.setState({ isOpen })}>
         
         <View style={styles.container}>
-					{
-						this.state.selectedItem == 'About' &&
-						 <Text> ABOUT </Text>
+          {
+						this.state.selectedItem == 'Clima' &&
+						 <Clima />
 					}
 
           {
